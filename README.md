@@ -19,7 +19,8 @@ that will take a base name and return one of three files based on device and fil
 2. `basename~iphone.storyboard`
 3. `basename.storyboard`
 
-This is designed to mimic the functionality of `UIImage`'s [`+imageNamed:`](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImage_Class/Reference/Reference.html#//apple_ref/occ/clm/UIImage/imageNamed:)
+This is designed to mimic the functionality of `UIImage`'s 
+[`+imageNamed:`](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIImage_Class/Reference/Reference.html#//apple_ref/occ/clm/UIImage/imageNamed:)
 method that returns image files based on device and screen resolution that are named appropriately.
 
 ##### Example
@@ -35,8 +36,9 @@ UIStoryboard *storyboard = [UIStoryboard mf_deviceStoryboardWithName:@"LoginPane
 ```
 
 When running on an iPad you'll get the `LoginPanel~ipad.storyboard` and on the iPhone you'll
-receive `LoginPanel~iphone.storyboard`. If there is only one storyboard that will be returned instead.
-If there are no storyboards with that basename nil is returned.
+receive `LoginPanel~iphone.storyboard`. If there is only one storyboard named without a device
+specific suffix that will be returned instead. If there are no storyboards with that basename 
+`nil` is returned.
 
 
 ## License
