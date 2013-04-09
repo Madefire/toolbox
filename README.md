@@ -40,6 +40,12 @@ receive `LoginPanel~iphone.storyboard`. If there is only one storyboard named wi
 specific suffix that will be returned instead. If there are no storyboards with that basename 
 `nil` is returned.
 
+#### Hash (NSString & NSData)
+
+There are two categories, one for NSString and one for NSData, that assist in providing both
+MD5 and SHA1 hashes for text strings and data blobs respectively. For both categories there exist
+`mf_md5` and `mf_sha1` methods that return NSStrings of the NSString or NSData objects they're
+called on.
 
 ## License
 
